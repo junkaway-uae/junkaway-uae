@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>JunkAway UAE | Black Gold Premium Junk Removal Dubai</title>
+<meta name="description" content="Luxury same day junk removal Dubai. Furniture removal, scrap pickup, villa cleanout, office clearance. Call JunkAway UAE now.">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#0b0b0b;
+color:#fff;
+line-height:1.5;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* COLORS */
+:root{
+--gold:#d4af37;
+--gold2:#f5d76e;
+--dark:#111;
+--card:#171717;
+--white:#fff;
+--muted:#cfcfcf;
+--green:#25D366;
+}
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:rgba(10,10,10,.95);
+backdrop-filter:blur(8px);
+padding:14px 16px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid rgba(212,175,55,.15);
+}
+.brand-wrap{
+display:flex;
+align-items:center;
+gap:10px;
+}
+.logo{
+width:44px;height:44px;
+border-radius:14px;
+background:linear-gradient(135deg,var(--gold),#8a6a00);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:900;
+color:#111;
+box-shadow:0 8px 20px rgba(212,175,55,.25);
+}
+.brand{
+font-size:20px;
+font-weight:900;
+letter-spacing:.5px;
+color:var(--gold2);
+}
+nav a{
+margin-left:14px;
+font-size:13px;
+font-weight:700;
+color:#fff;
+opacity:.95;
+}
+
+/* HERO */
+.hero{
+background:
+linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.72)),
+url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80') center/cover;
+padding:72px 16px 70px;
+text-align:center;
+}
+.hero h1{
+font-size:46px;
+line-height:1.08;
+font-weight:900;
+max-width:920px;
+margin:auto;
+color:#fff;
+}
+.hero h1 span{color:var(--gold2)}
+.hero p{
+margin:18px auto 26px;
+font-size:18px;
+max-width:760px;
+color:#eee;
+}
+.btns{
+display:flex;
+gap:12px;
+justify-content:center;
+flex-wrap:wrap;
+}
+.btn{
+padding:16px 24px;
+border-radius:14px;
+font-weight:900;
+font-size:17px;
+min-width:230px;
+box-shadow:0 10px 24px rgba(0,0,0,.25);
+}
+.call{
+background:linear-gradient(135deg,var(--gold2),var(--gold));
+color:#111;
+}
+.wa{
+background:var(--green);
+color:#fff;
+}
+.badges{
+margin-top:22px;
+display:flex;
+gap:10px;
+justify-content:center;
+flex-wrap:wrap;
+}
+.badges span{
+padding:10px 14px;
+border-radius:30px;
+font-size:14px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.08);
+}
+
+/* SECTIONS */
+.section{
+padding:56px 16px;
+max-width:1200px;
+margin:auto;
+}
+.title{
+text-align:center;
+font-size:38px;
+font-weight:900;
+margin-bottom:28px;
+color:var(--gold2);
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+/* SERVICE CARDS */
+.card{
+background:var(--card);
+border-radius:20px;
+overflow:hidden;
+border:1px solid rgba(212,175,55,.12);
+box-shadow:0 12px 28px rgba(0,0,0,.25);
+}
+.card img{
+height:180px;
+width:100%;
+object-fit:cover;
+}
+.card .pad{padding:18px}
+.card h3{
+font-size:24px;
+margin-bottom:10px;
+color:var(--gold2);
+}
+.card p{
+font-size:15px;
+color:#ddd;
+}
+
+/* WHY US */
+.why{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+.mini{
+background:#141414;
+padding:22px;
+border-radius:18px;
+border:1px solid rgba(212,175,55,.08);
+}
+.mini h4{
+font-size:22px;
+color:var(--gold2);
+margin-bottom:8px;
+}
+.mini p{color:#ddd;font-size:15px}
+
+/* REVIEWS */
+.review{
+background:#151515;
+padding:22px;
+border-radius:18px;
+border:1px solid rgba(212,175,55,.08);
+font-size:16px;
+}
+
+/* CTA */
+.cta{
+margin:20px auto 0;
+max-width:1200px;
+padding:60px 16px;
+text-align:center;
+background:linear-gradient(135deg,#181818,#0b0b0b);
+border-top:1px solid rgba(212,175,55,.12);
+border-bottom:1px solid rgba(212,175,55,.12);
+}
+.cta h2{
+font-size:40px;
+color:var(--gold2);
+margin-bottom:12px;
+}
+
+/* FOOTER */
+footer{
+padding:28px 16px 110px;
+text-align:center;
+color:#ccc;
+font-size:15px;
+}
+
+/* FLOAT */
+.float{
+position:fixed;
+right:14px;
+bottom:16px;
+display:flex;
+flex-direction:column;
+gap:10px;
+z-index:999;
+}
+.float a{
+padding:13px 18px;
+border-radius:40px;
+font-weight:900;
+font-size:16px;
+min-width:145px;
+text-align:center;
+box-shadow:0 12px 26px rgba(0,0,0,.28);
+}
+
+/* MOBILE */
+@media(max-width:950px){
+.grid,.why{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+.brand{font-size:17px}
+nav a{font-size:12px;margin-left:8px}
+.hero{padding:56px 14px 62px}
+.hero h1{font-size:31px}
+.hero p{font-size:16px}
+.btn{min-width:100%}
+.title{font-size:30px}
+.grid,.why{grid-template-columns:1fr 1fr}
+.card img{height:145px}
+.cta h2{font-size:30px}
+.float a{min-width:128px;font-size:15px}
+}
+@media(max-width:480px){
+.grid,.why{grid-template-columns:1fr}
+.hero h1{font-size:28px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="brand-wrap">
+<div class="logo">♻</div>
+<div class="brand">JUNKAWAY UAE</div>
+</div>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#reviews">Reviews</a>
+<a href="tel:0529267678">Call</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Dubai’s <span>Black Gold</span> Junk Removal Service</h1>
+<p>Luxury same day furniture removal, scrap pickup, villa cleanouts and office waste removal anywhere in Dubai.</p>
+
+<div class="btns">
+<a class="btn call" href="tel:0529267678">📞 Call 052 92 67 67 8</a>
+<a class="btn wa" href="https://wa.me/971529267678">WhatsApp Now</a>
+</div>
+
+<div class="badges">
+<span>Same Day Pickup</span>
+<span>Trusted Team</span>
+<span>Open 7 Days</span>
+<span>All Dubai Areas</span>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2 class="title">Premium Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80">
+<div class="pad">
+<h3>Furniture Removal</h3>
+<p>Old sofas, beds, wardrobes and unwanted furniture removed quickly.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=900&q=80">
+<div class="pad">
+<h3>Scrap Pickup</h3>
+<p>Metal, appliances, electronics and recyclable junk collection.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80">
+<div class="pad">
+<h3>Villa Cleanout</h3>
+<p>Move-out cleaning and full house junk clearance services.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80">
+<div class="pad">
+<h3>Office Clearance</h3>
+<p>Desks, cabinets, chairs and office waste disposal solutions.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Why Choose Us</h2>
+
+<div class="why">
+<div class="mini"><h4>Fast Arrival</h4><p>Quick response anywhere in Dubai.</p></div>
+<div class="mini"><h4>Fair Pricing</h4><p>No hidden charges. Honest quotes.</p></div>
+<div class="mini"><h4>Premium Team</h4><p>Professional staff with experience.</p></div>
+<div class="mini"><h4>Clean Service</h4><p>Respectful and tidy removal process.</p></div>
+</div>
+</section>
+
+<section class="section" id="reviews">
+<h2 class="title">Customer Reviews</h2>
+
+<div class="grid">
+<div class="review">★★★★★ Fast and professional team. Highly recommended.</div>
+<div class="review">★★★★★ Removed my furniture same day. Great price.</div>
+<div class="review">★★★★★ Best junk removal service in Dubai.</div>
+<div class="review">★★★★★ Easy booking by WhatsApp. Very smooth.</div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Need Junk Gone Today?</h2>
+<p>Call or WhatsApp now for immediate booking.</p><br>
+<div class="btns">
+<a class="btn call" href="tel:0529267678">Call Now</a>
+<a class="btn wa" href="https://wa.me/971529267678">WhatsApp</a>
+</div>
+</section>
+
+<footer>
+JunkAway UAE • Dubai, UAE • Open 7 Days<br>
+052 92 67 67 8
+</footer>
+
+<div class="float">
+<a class="wa" href="https://wa.me/971529267678">WhatsApp</a>
+<a class="btn call" style="min-width:145px;padding:13px 18px" href="tel:0529267678">Call</a>
+</div>
+
+</body>
+</html>
