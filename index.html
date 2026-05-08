@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUNK AWAY UAE | Dubai Junk Removal Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7f6;
+color:#111827;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#ffffff;
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+}
+
+.logo span{
+color:#22c55e;
+}
+
+nav a{
+margin-left:24px;
+text-decoration:none;
+color:#111827;
+font-weight:600;
+font-size:15px;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),
+url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=1974&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 8%;
+color:white;
+}
+
+.hero-content{
+max-width:1100px;
+}
+
+.hero h1{
+font-size:72px;
+line-height:1.1;
+font-weight:800;
+margin-bottom:30px;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.9;
+margin-bottom:40px;
+color:#f3f4f6;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-bottom:40px;
+}
+
+.btn{
+padding:18px 40px;
+border-radius:50px;
+font-size:18px;
+font-weight:700;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn-green{
+background:#22c55e;
+color:white;
+}
+
+.btn-green:hover{
+background:#16a34a;
+transform:translateY(-3px);
+}
+
+.btn-outline{
+border:2px solid white;
+color:white;
+}
+
+.btn-outline:hover{
+background:white;
+color:#111827;
+}
+
+.badges{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.badge{
+background:rgba(255,255,255,0.12);
+padding:14px 22px;
+border-radius:50px;
+font-size:15px;
+font-weight:600;
+backdrop-filter:blur(8px);
+}
+
+section{
+padding:110px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:54px;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.section-text{
+max-width:1100px;
+margin:auto;
+text-align:center;
+font-size:20px;
+line-height:2;
+color:#4b5563;
+margin-bottom:70px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.stat-box{
+background:white;
+padding:50px 30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.stat-box h3{
+font-size:50px;
+color:#22c55e;
+margin-bottom:10px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+}
+
+.service{
+background:white;
+border-radius:28px;
+overflow:hidden;
+box-shadow:0 10px 35px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.service:hover{
+transform:translateY(-10px);
+}
+
+.service img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.service-content{
+padding:30px;
+}
+
+.service h3{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.service p{
+font-size:17px;
+line-height:1.9;
+color:#4b5563;
+}
+
+.why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.why-box{
+background:white;
+padding:40px 30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+.why-box h3{
+margin:20px 0;
+font-size:24px;
+}
+
+.why-box p{
+line-height:1.8;
+color:#4b5563;
+}
+
+.cta{
+background:#22c55e;
+color:white;
+padding:90px 8%;
+text-align:center;
+border-radius:40px;
+margin:80px 8%;
+}
+
+.cta h2{
+font-size:60px;
+margin-bottom:25px;
+}
+
+.cta p{
+font-size:22px;
+line-height:1.9;
+max-width:900px;
+margin:auto;
+margin-bottom:40px;
+}
+
+footer{
+background:#111827;
+color:white;
+padding:70px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+footer h3{
+margin-bottom:20px;
+font-size:28px;
+}
+
+footer p,
+footer li{
+line-height:2;
+color:#d1d5db;
+list-style:none;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#22c55e;
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+color:white;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+z-index:999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:40px;
+}
+
+.cta h2{
+font-size:42px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<span>JUNK</span> AWAY UAE
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Reviews</a>
+<a href="#">FAQ</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Dubai’s #1 Junk Removal Company</h1>
+
+<p>
+Junk Away UAE provides professional same-day junk removal services across Dubai for homes, apartments, villas, offices, warehouses, restaurants, shops, and construction sites. Our experienced team removes unwanted furniture, old appliances, office junk, mattresses, garden waste, electronics, renovation debris, and all types of clutter quickly, safely, and professionally. We focus on affordable pricing, fast arrival, eco-friendly disposal, and complete customer satisfaction for every junk removal project in Dubai.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="btn btn-green">Call Now</a>
+
+<a href="#" class="btn btn-outline">WhatsApp Us</a>
+
+</div>
+
+<div class="badges">
+
+<div class="badge">✔ Same Day Pickup</div>
+<div class="badge">✔ Eco Friendly Disposal</div>
+<div class="badge">✔ Professional Team</div>
+<div class="badge">✔ Fast WhatsApp Support</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Trusted Junk Removal Experts in Dubai</h2>
+
+<p class="section-text">
+We help residential and commercial customers remove all types of junk, waste, furniture, office materials, damaged appliances, construction debris, storage clutter, electronic waste, and unwanted household items across Dubai. Our mission is to provide clean, affordable, and reliable junk removal solutions with fast same-day service and professional customer support.
+</p>
+
+<p class="section-text">
+Our professional junk removal company specializes in villa cleanouts, apartment junk removal, office waste disposal, warehouse cleanup, furniture pickup, appliance disposal, renovation debris removal, and commercial junk hauling services. We use professional equipment and trained workers to ensure all junk is removed safely and efficiently.
+</p>
+
+<div class="stats">
+
+<div class="stat-box">
+<h3>1500+</h3>
+<p>Completed Junk Removal Projects</p>
+</div>
+
+<div class="stat-box">
+<h3>900+</h3>
+<p>Happy Dubai Customers</p>
+</div>
+
+<div class="stat-box">
+<h3>24/7</h3>
+<p>WhatsApp & Customer Support</p>
+</div>
+
+<div class="stat-box">
+<h3>30+</h3>
+<p>Dubai Areas Covered</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Our Professional Services</h2>
+
+<p class="section-text">
+We provide complete junk removal and waste disposal services for homes, offices, villas, warehouses, restaurants, shops, apartments, and commercial properties across Dubai.
+</p>
+
+<div class="services">
+
+<div class="service">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+<div class="service-content">
+<h3>Furniture Removal</h3>
+<p>
+Professional removal of sofas, beds, wardrobes, cabinets, tables, chairs, office desks, damaged furniture, and unwanted household items from homes, villas, apartments, and offices.
+</p>
+</div>
+</div>
+
+<div class="service">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+<div class="service-content">
+<h3>Appliance Disposal</h3>
+<p>
+Safe disposal and pickup of refrigerators, washing machines, microwaves, ovens, AC units, kitchen appliances, electronic waste, and old household machines.
+</p>
+</div>
+</div>
+
+<div class="service">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop">
+<div class="service-content">
+<h3>Office Junk Removal</h3>
+<p>
+Complete office cleanup and commercial junk removal including office furniture, partitions, electronics, paperwork waste, storage clutter, and renovation debris.
+</p>
+</div>
+</div>
+
+<div class="service">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+<div class="service-content">
+<h3>Villa Cleanouts</h3>
+<p>
+Fast villa and apartment junk removal services including furniture disposal, garden waste cleanup, storage cleaning, old appliance removal, and complete property cleanouts.
+</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Why Choose Junk Away UAE</h2>
+
+<p class="section-text">
+Junk Away UAE is trusted by homeowners, tenants, offices, restaurants, warehouses, shops, property managers, and businesses across Dubai because we provide reliable same-day junk removal services with professional workers and affordable pricing.
+</p>
+
+<div class="why">
+
+<div class="why-box">
+<h3>Fast Same Day Service</h3>
+<p>
+Our Dubai junk removal team arrives quickly and removes unwanted items safely and professionally on the same day.
+</p>
+</div>
+
+<div class="why-box">
+<h3>Affordable Pricing</h3>
+<p>
+We provide affordable and transparent pricing for residential and commercial junk removal services across Dubai.
+</p>
+</div>
+
+<div class="why-box">
+<h3>Eco Friendly Disposal</h3>
+<p>
+We focus on recycling and responsible waste disposal to reduce landfill waste and support a cleaner environment.
+</p>
+</div>
+
+<div class="why-box">
+<h3>Professional Team</h3>
+<p>
+Our experienced junk removal experts handle heavy lifting, loading, transportation, and disposal professionally.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="cta">
+
+<h2>Need Fast Junk Removal in Dubai?</h2>
+
+<p>
+Contact Junk Away UAE today for reliable same-day junk removal services for homes, apartments, offices, villas, warehouses, restaurants, and commercial properties anywhere in Dubai.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="btn btn-outline">Call Now</a>
+
+<a href="#" class="btn btn-outline">WhatsApp Now</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Junk Away UAE</h3>
+<p>
+Professional junk removal company in Dubai providing same-day furniture removal, office cleanup, appliance disposal, villa cleanouts, waste collection, warehouse cleanup, renovation debris removal, and eco-friendly junk removal services.
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<ul>
+<li>Home</li>
+<li>About</li>
+<li>Services</li>
+<li>Reviews</li>
+<li>FAQ</li>
+<li>Contact</li>
+</ul>
+</div>
+
+<div>
+<h3>Dubai Service Areas</h3>
+<ul>
+<li>Dubai Marina</li>
+<li>JVC</li>
+<li>Downtown Dubai</li>
+<li>Business Bay</li>
+<li>Palm Jumeirah</li>
+<li>Deira</li>
+<li>Al Barsha</li>
+</ul>
+</div>
+
+</div>
+
+</footer>
+
+<a href="#" class="whatsapp">✆</a>
+
+</body>
+</html>
