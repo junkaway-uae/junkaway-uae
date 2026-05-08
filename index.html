@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNK AWAY UAE | Dubai's #1 Professional Junk Removal Service</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-red: #d32f2f;
+            --dark-red: #b71c1c;
+            --silver: #e0e0e0;
+            --light-silver: #f5f5f5;
+            --dark-grey: #1a1a1a;
+            --text-grey: #4a4a4a;
+        }
+
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body { background: var(--light-silver); color: var(--dark-grey); line-height: 1.6; }
+
+        header {
+            position: fixed; top: 0; width: 100%;
+            background: #ffffff; padding: 15px 6%;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .logo { font-size: 28px; font-weight: 800; color: var(--dark-grey); letter-spacing: -1px; }
+        .logo span { color: var(--primary-red); }
+
+        nav a {
+            margin-left: 25px; text-decoration: none;
+            color: var(--dark-grey); font-weight: 600; font-size: 14px;
+            text-transform: uppercase; transition: 0.3s;
+        }
+        nav a:hover { color: var(--primary-red); }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('[attachment_2](attachment)');
+            background-size: cover; background-position: center;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; color: white; padding: 0 5%;
+        }
+
+        .hero-content h1 { font-size: 64px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+        .hero-content p { font-size: 20px; max-width: 800px; margin: 0 auto 35px; color: #e0e0e0; }
+
+        .btn-group { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn {
+            padding: 16px 35px; border-radius: 5px; font-size: 16px;
+            font-weight: 700; text-decoration: none; transition: 0.3s;
+            text-transform: uppercase; display: inline-flex; align-items: center; gap: 10px;
+        }
+        .btn-red { background: var(--primary-red); color: white; }
+        .btn-red:hover { background: var(--dark-red); transform: translateY(-3px); }
+        .btn-outline { border: 2px solid white; color: white; }
+        .btn-outline:hover { background: white; color: var(--dark-grey); }
+
+        section { padding: 90px 8%; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 42px; font-weight: 800; margin-bottom: 15px; }
+
+        .services-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;
+        }
+        .service-card {
+            background: white; border-radius: 12px; overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.4s;
+        }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
+        .service-card img { width: 100%; height: 220px; object-fit: cover; }
+        .service-card-info { padding: 25px; }
+        .service-card-info h3 { font-size: 22px; margin-bottom: 12px; color: var(--primary-red); }
+
+        .stats-bar { background: var(--dark-grey); color: white; display: flex; justify-content: space-around; padding: 60px 8%; flex-wrap: wrap; gap: 30px; }
+        .stat-item h3 { font-size: 48px; color: var(--primary-red); }
+        .stat-item p { font-weight: 600; text-transform: uppercase; font-size: 13px; color: var(--silver); }
+
+        .areas { background: var(--silver); text-align: center; }
+        .area-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px; }
+        .tag { background: white; padding: 10px 20px; border-radius: 50px; font-weight: 600; font-size: 14px; border: 1px solid #ccc; }
+
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px;
+            background: #25d366; color: white; width: 65px; height: 65px;
+            border-radius: 50%; display: flex; justify-content: center; align-items: center;
+            font-size: 35px; z-index: 1000; box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1.1); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        footer { background: #111; color: white; padding: 60px 8% 30px; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-content h4 { margin-bottom: 20px; border-left: 4px solid var(--primary-red); padding-left: 10px; }
+        .footer-content ul { list-style: none; }
+        .footer-content li { margin-bottom: 10px; color: #bbb; cursor: pointer; }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 38px; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><span>JUNK</span>AWAY UAE</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#areas">Dubai Areas</a>
+            <a href="tel:+971529267678">Call: +971 52 926 7678</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Expert Junk Removal <br>Across Dubai</h1>
+            <p>From Dubai Marina to Mirdif, we provide the fastest, most reliable residential and commercial junk clearance services in the city.</p>
+            <div class="btn-group">
+                <a href="tel:+971529267678" class="btn btn-red"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="https://wa.me/971529267678" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-bar">
+        <div class="stat-item"><h3>15k+</h3><p>Tons Removed in Dubai</p></div>
+        <div class="stat-item"><h3>2k+</h3><p>Dubai Clients</p></div>
+        <div class="stat-item"><h3>60</h3><p>Min Response Time</p></div>
+        <div class="stat-item"><h3>24/7</h3><p>Available Across Dubai</p></div>
+    </div>
+
+    <section id="services">
+        <div class="section-header">
+            <h2>Our Professional Solutions</h2>
+            <p>Real-world examples of our fleet and team clearing residential and commercial waste daily.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="[attachment_1](attachment)" alt="Furniture Removal">
+                <div class="service-card-info">
+                    <h3>Furniture Disposal</h3>
+                    <p>Complete removal of old sofas, bed sets, and heavy cabinets from Dubai villas and apartments.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="[attachment_4](attachment)" alt="Office Cleanup">
+                <div class="service-card-info">
+                    <h3>Office Clearance</h3>
+                    <p>Dismantling and removal of workstations and electronics with zero business downtime in Business Bay or DIFC.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="[attachment_3](attachment)" alt="Loading Truck">
+                <div class="service-card-info">
+                    <h3>Bulk Waste Collection</h3>
+                    <p>Fast, efficient loading into our professional fleet to clear large quantities of waste in one trip.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="[attachment_0](attachment)" alt="Garden Waste">
+                <div class="service-card-info">
+                    <h3>Villa & Garden Waste</h3>
+                    <p>Removal of green waste and renovation debris from gardens in Jumeirah and Arabian Ranches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="areas" id="areas">
+        <div class="section-header">
+            <h2>Dubai Areas We Serve</h2>
+            <p>Operating 24/7 in every corner of Dubai to ensure your junk is gone the same day.</p>
+        </div>
+        <div class="area-tags">
+            <div class="tag">Dubai Marina</div>
+            <div class="tag">Downtown Dubai</div>
+            <div class="tag">JLT & JVC</div>
+            <div class="tag">Palm Jumeirah</div>
+            <div class="tag">Business Bay</div>
+            <div class="tag">Al Barsha</div>
+            <div class="tag">Jumeirah</div>
+            <div class="tag">Mirdif</div>
+            <div class="tag">Bur Dubai</div>
+            <div class="tag">Deira</div>
+            <div class="tag">Arabian Ranches</div>
+            <div class="tag">Dubai Silicon Oasis</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>About JunkAway Dubai</h4>
+                <p>The leading junk removal specialist in Dubai. We focus on fast arrivals, fair pricing, and 100% recycling whenever possible.</p>
+            </div>
+            <div>
+                <h4>Dubai Services</h4>
+                <ul>
+                    <li>Residential Pickup</li>
+                    <li>Office Clearance</li>
+                    <li>Warehouse Cleanup</li>
+                    <li>Appliance Recycling</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Get in Touch</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +971 52 926 7678</li>
+                    <li><i class="fas fa-envelope"></i> info@junkawayuae.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dubai, UAE</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 13px; color: #777;">
+            &copy; 2026 JUNK AWAY UAE | Dubai's Trusted Removal Partner.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/971529267678" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
