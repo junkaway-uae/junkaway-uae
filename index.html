@@ -1,0 +1,460 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Junk Away UAE | Premium Junk Removal Services Dubai</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#111827;
+line-height:1.7;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+background:#fff;
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#f59e0b;
+}
+
+.logo span{
+color:#111827;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:#111827;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#f59e0b;
+}
+
+.hero{
+min-height:100vh;
+background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop') center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 20px;
+color:#fff;
+}
+
+.hero-content{
+max-width:950px;
+}
+
+.hero h1{
+font-size:72px;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 34px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:0.3s;
+display:inline-block;
+}
+
+.btn-primary{
+background:#f59e0b;
+color:#fff;
+}
+
+.btn-primary:hover{
+transform:translateY(-4px);
+background:#e58d00;
+}
+
+.btn-secondary{
+border:2px solid #fff;
+color:#fff;
+}
+
+.btn-secondary:hover{
+background:#fff;
+color:#111827;
+}
+
+.badges{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.badge{
+background:rgba(255,255,255,0.15);
+padding:12px 20px;
+border-radius:30px;
+backdrop-filter:blur(6px);
+font-weight:600;
+}
+
+section{
+padding:100px 6%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:52px;
+margin-bottom:15px;
+font-weight:800;
+}
+
+.section-title p{
+max-width:700px;
+margin:auto;
+color:#555;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.stat-box{
+background:#fff;
+padding:40px;
+text-align:center;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.stat-box:hover{
+transform:translateY(-10px);
+}
+
+.stat-box h3{
+font-size:48px;
+color:#f59e0b;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.about h2{
+font-size:50px;
+margin-bottom:25px;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:#fff;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.service-card:hover{
+transform:translateY(-12px);
+}
+
+.service-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.service-content{
+padding:30px;
+}
+
+.service-content h3{
+margin-bottom:15px;
+font-size:28px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.step-box{
+background:#fff;
+padding:40px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.step-box i{
+font-size:50px;
+color:#f59e0b;
+margin-bottom:20px;
+}
+
+.choose-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.choose-card{
+background:#fff;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.choose-card i{
+font-size:42px;
+color:#f59e0b;
+margin-bottom:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:20px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.review-card{
+background:#fff;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.review-card h4{
+margin-top:20px;
+color:#f59e0b;
+}
+
+.faq{
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+background:#fff;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.cta{
+background:linear-gradient(135deg,#f59e0b,#ffcb66);
+text-align:center;
+color:#fff;
+padding:90px 30px;
+border-radius:35px;
+}
+
+.cta h2{
+font-size:54px;
+margin-bottom:20px;
+}
+
+footer{
+background:#111827;
+color:#fff;
+padding:70px 6% 30px;
+margin-top:100px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-bottom:40px;
+}
+
+footer h3{
+margin-bottom:20px;
+color:#f59e0b;
+}
+
+footer a{
+color:#fff;
+text-decoration:none;
+display:block;
+margin-bottom:10px;
+}
+
+.copy{
+text-align:center;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:34px;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,0.25);
+z-index:999;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:48px;
+}
+
+.section-title h2,
+.about h2,
+.cta h2{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+}
+</style></head>
+<body><header>
+<div class="logo">JUNK <span>AWAY UAE</span></div>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#reviews">Reviews</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</nav>
+</header><section class="hero">
+<div class="hero-content">
+<h1>Dubai’s #1 Junk Removal Company</h1>
+<p>Professional same-day junk removal services across Dubai for homes, villas, offices, apartments, warehouses, restaurants, and commercial properties.</p><div class="buttons">
+<a href="tel:+971529267678" class="btn btn-primary">Call Now</a>
+<a href="https://wa.me/971529267678" class="btn btn-secondary">WhatsApp Us</a>
+</div><div class="badges">
+<div class="badge">✔ Same Day Pickup</div>
+<div class="badge">✔ Affordable Pricing</div>
+<div class="badge">✔ Professional Team</div>
+<div class="badge">✔ 24/7 WhatsApp Support</div>
+</div>
+</div>
+</section><section>
+<div class="stats">
+<div class="stat-box">
+<h3>500+</h3>
+<p>Completed Jobs</p>
+</div>
+<div class="stat-box">
+<h3>300+</h3>
+<p>Happy Customers</p>
+</div>
+<div class="stat-box">
+<h3>24/7</h3>
+<p>Customer Support</p>
+</div>
+<div class="stat-box">
+<h3>15+</h3>
+<p>Dubai Areas Covered</p>
+</div>
+</div>
+</section><section id="about">
+<div class="about">
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop">
+<div>
+<h2>Professional Junk Removal Services in Dubai</h2>
+<p>Junk Away UAE provides reliable and affordable junk removal services throughout Dubai. Our experienced team removes unwanted furniture, appliances, office waste, electronics, renovation debris, mattresses, garden waste, and commercial junk professionally and safely.</p>
+<br>
+<p>We provide same-day pickup services with affordable pricing and fast response times for homes, offices, villas, warehouses, restaurants, and businesses across Dubai.</p>
+</div>
+</div>
+</section><section id="services">
+<div class="section-title">
+<h2>Our Professional Services</h2>
+<p>Complete junk removal and waste disposal services across Dubai.</p>
+</div><div class="services-grid">
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+<div class="service-content">
+<h3>Furniture Removal</h3>
+<p>Safe removal of sofas, beds, wardrobes, tables, chairs, and unwanted 
