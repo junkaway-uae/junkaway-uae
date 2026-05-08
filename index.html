@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNK AWAY UAE | Comprehensive Waste Management & Junk Removal Dubai</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --red: #d32f2f;
+            --dark-red: #b71c1c;
+            --green: #25d366;
+            --dark: #121212;
+            --light-grey: #f8f9fa;
+            --text-grey: #444;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        body { background: var(--light-grey); color: var(--dark); line-height: 1.8; }
+
+        /* Navigation */
+        header {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            padding: 15px 6%;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .logo { font-size: 24px; font-weight: 800; color: var(--dark); }
+        .logo span { color: var(--red); }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--dark); font-weight: 600; font-size: 14px; }
+
+        /* Hero */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), 
+                        url('https://images.pexels.com/photos/5025667/pexels-photo-5025667.jpeg?auto=compress&cs=tinysrgb&w=1600');
+            background-size: cover; background-position: center;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; color: white; padding: 0 6%;
+        }
+        .hero h1 { font-size: clamp(32px, 8vw, 60px); font-weight: 800; margin-bottom: 20px; }
+        .hero p { font-size: 19px; max-width: 800px; margin: 0 auto 30px; color: #ddd; }
+
+        .btn-box { display: flex; flex-direction: column; gap: 15px; align-items: center; }
+        .btn {
+            width: 280px; padding: 18px; border-radius: 8px; font-weight: 700;
+            text-decoration: none; text-transform: uppercase; display: flex; 
+            align-items: center; justify-content: center; gap: 12px; transition: 0.3s;
+        }
+        .btn-red { background: var(--red); color: white; }
+        .btn-green { background: var(--green); color: white; }
+
+        /* General Section Styling */
+        section { padding: 100px 6%; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 38px; font-weight: 800; text-transform: uppercase; }
+        .section-header hr { width: 70px; height: 5px; background: var(--red); border: none; margin: 15px auto; }
+
+        /* Service Blocks */
+        .service-block { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 40px; 
+            background: white; 
+            margin-bottom: 40px; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .service-img { width: 100%; height: 350px; object-fit: cover; }
+        .service-text { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+        .service-text h3 { font-size: 28px; color: var(--red); margin-bottom: 15px; font-weight: 700; }
+        .service-text p { font-size: 16px; color: var(--text-grey); margin-bottom: 20px; }
+        .service-text ul { list-style: none; }
+        .service-text li { margin-bottom: 10px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+        .service-text li i { color: var(--green); }
+
+        /* Testimonials */
+        .reviews { background: var(--dark); color: white; }
+        .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .review-card { background: #1e1e1e; padding: 30px; border-radius: 15px; border-left: 5px solid var(--red); }
+        .stars { color: #ffc107; margin-bottom: 10px; }
+
+        /* Footer */
+        footer { background: #000; color: #888; padding: 80px 6% 30px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-grid h4 { color: white; margin-bottom: 20px; }
+
+        .wa-float {
+            position: fixed; bottom: 30px; right: 30px;
+            background: var(--green); color: white; width: 65px; height: 65px;
+            border-radius: 50%; display: flex; justify-content: center; align-items: center;
+            font-size: 35px; z-index: 2000; box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        @media (min-width: 768px) {
+            .btn-box { flex-direction: row; justify-content: center; }
+            .service-block:nth-child(even) { direction: rtl; }
+            .service-text { direction: ltr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><span>JUNK</span>AWAY UAE</div>
+        <nav class="nav-links">
+            <a href="#services">Services</a>
+            <a href="tel:+971529267678" style="color:var(--red);">Call Now</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Complete Waste Solutions in Dubai</h1>
+            <p>From residential furniture to major construction debris, we provide professional, fast, and eco-friendly removal services across the UAE.</p>
+            <div class="btn-box">
+                <a href="tel:+971529267678" class="btn btn-red"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <a href="https://wa.me/971529267678" class="btn btn-green"><i class="fab fa-whatsapp"></i> WhatsApp Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-header">
+            <h2>Our Specialized Services</h2>
+            <hr>
+            <p>Professional clearance for every type of waste, managed by experts.</p>
+        </div>
+
+        <div class="service-block">
+            <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=800" class="service-img" alt="Sofa Removal">
+            <div class="service-text">
+                <h3>Sofa & Couch Removal</h3>
+                <p>Old sofas are bulky and difficult to move through narrow Dubai apartment corridors. Our team specializes in the safe extraction and disposal of all types of seating, including heavy leather sectionals, L-shaped sofas, and recliners. We handle the heavy lifting so you don't risk damaging your walls or floors.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Safe extraction from high-rise buildings</li>
+                    <li><i class="fas fa-check-circle"></i> Fabric and leather recycling</li>
+                    <li><i class="fas fa-check-circle"></i> Same-day pickup available</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <img src="https://images.pexels.com/photos/584399/pexels-photo-584399.jpeg?auto=compress&cs=tinysrgb&w=800" class="service-img" alt="Furniture Removal">
+            <div class="service-text">
+                <h3>Furniture Removal & Dismantling</h3>
+                <p>Upgrading your home decor? We provide a comprehensive solution for old furniture. Whether it’s a king-size bed frame, a massive dining table, or a fitted wardrobe, our team brings the tools to dismantle everything on-site. We clear out entire bedrooms and living rooms in minutes, ensuring your space is ready for your new arrivals.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Professional dismantling services</li>
+                    <li><i class="fas fa-check-circle"></i> Wardrobes, beds, and cabinets</li>
+                    <li><i class="fas fa-check-circle"></i> Donation of usable items</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <img src="https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=800" class="service-img" alt="Garden Waste">
+            <div class="service-text">
+                <h3>Garden Waste Disposal</h3>
+                <p>Maintaining a beautiful villa garden in Dubai produces a lot of green waste. From palm fronds and grass clippings to fallen branches and old soil, we clear all organic waste. We ensure your outdoor space in areas like Arabian Ranches or Jumeirah remains pristine and clutter-free.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Green waste & branch removal</li>
+                    <li><i class="fas fa-check-circle"></i> Clearing fallen leaves and debris</li>
+                    <li><i class="fas fa-check-circle"></i> Composting-friendly disposal</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <img src="https://images.pexels.com/photos/7150986/pexels-photo-7150986.jpeg?auto=compress&cs=tinysrgb&w=800" class="service-img" alt="Junk Removal">
+            <div class="service-text">
+                <h3>General Junk Removal</h3>
+                <p>Is your garage or balcony overflowing with boxes, old clothes, and miscellaneous items? Our general junk removal service is designed for those "catch-all" spaces. We clear out everything you no longer need, helping you reclaim your living space. We serve apartments, villas, and small offices with equal speed.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Garage & balcony cleanouts</li>
+                    <li><i class="fas fa-check-circle"></i> Household clutter & boxes</li>
+                    <li><i class="fas fa-check-circle"></i> Fast, friendly service</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <img src="https://images.pexels.com/photos/258510/pexels-photo-258510.jpeg?auto=compress&cs=tinysrgb&w=800" class="service-img" alt="Scrap Removal">
+            <div class="service-text">
+                <h3>Scrap Metal Removal</h3>
+                <p>We provide efficient removal for all types of scrap metal, including old kitchen appliances (fridges, ovens), AC units, and metal frames. We ensure all metallic waste is transported to specialized recycling plants in Dubai to be processed according to UAE environmental standards.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> AC units & White goods</li>
+                    <li><i class="fas fa-check-circle"></i> Industrial metal scraps</li>
+                    <li><i class="fas fa-check-circle"></i> Eco-friendly recycling</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800" class="service-img" alt="Construction Waste">
+            <div class="service-text">
+                <h3>Construction Waste Removal</h3>
+                <p>Home renovations can leave behind a massive mess of wood, tiles, concrete, and drywall. Our construction debris service is tailored for home improvement projects. We clear out the heavy rubble so your contractors can finish the job. We are equipped to handle heavy loads that standard waste services won't accept.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Renovation debris & tiles</li>
+                    <li><i class="fas fa-check-circle"></i> Wood, drywall, and glass</li>
+                    <li><i class="fas fa-check-circle"></i> Large-scale rubble removal</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="section-header">
+            <h2 style="color:white;">Trusted by Dubai Residents</h2>
+            <hr>
+        </div>
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"They cleared my construction waste after my kitchen renovation in Mirdif. Very professional and the price was fair."</p>
+                <p><strong>- Robert H.</strong></p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Removed a giant L-shaped sofa from my 30th-floor apartment in the Marina. No damage to my walls. Great job!"</p>
+                <p><strong>- Elena S.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4>JUNK AWAY UAE</h4>
+                <p>Providing the most reliable waste management and junk removal services in Dubai and surrounding areas.</p>
+            </div>
+            <div>
+                <h4>Contact Details</h4>
+                <p>Phone: +971 52 926 7678</p>
+                <p>Email: info@junkawayuae.online</p>
+                <p>Location: Al Quoz, Dubai</p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:50px; font-size:12px;">&copy; 2026 JUNK AWAY UAE. All Rights Reserved.</p>
+    </footer>
+
+    <a href="https://wa.me/971529267678" class="wa-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
