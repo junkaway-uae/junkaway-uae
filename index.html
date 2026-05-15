@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junk Away UAE | Same-Day Junk Removal Dubai</title>
+    <meta name="description" content="Professional same-day junk removal in Dubai. Scrap, construction waste, furniture removal, and office strip-outs. Book your free quote now!">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18123164975"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-18123164975');
+    </script>
+
+    <style>
+        :root {
+            --primary-green: #28a745;
+            --btn-dark: #1e7e34;
+            --text-main: #1a202c;
+            --bg-light: #fdfdfd;
+            --accent-light: #eef9f1;
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        
+        body { background-color: var(--bg-light); color: var(--text-main); line-height: 1.5; padding-bottom: 80px; }
+
+        header {
+            background: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid var(--primary-green);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { display: flex; align-items: center; gap: 10px; font-weight: 900; color: var(--primary-green); font-size: 1.4rem; text-transform: uppercase; }
+        .logo-icon { background: var(--primary-green); color: #fff; padding: 5px 8px; border-radius: 6px; }
+
+        /* HERO SECTION */
+        .hero { padding: 40px 20px; text-align: center; background: #fff; }
+        .badge-row { display: flex; justify-content: center; gap: 10px; margin-bottom: 15px; }
+        .badge { background: var(--accent-light); color: var(--btn-dark); font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; border: 1px solid #d4edda; }
+        
+        .hero h1 { font-size: 38px; line-height: 1.1; font-weight: 900; margin-bottom: 15px; }
+        .hero h1 span { color: var(--primary-green); }
+
+        .check-item { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 8px; font-weight: 600; font-size: 16px; }
+        .check-icon { color: var(--primary-green); font-weight: 900; }
+
+        .hero-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 25px; }
+        .btn { padding: 14px; border-radius: 8px; text-decoration: none; font-weight: 800; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 5px; transition: 0.3s; }
+        .btn-call { background: var(--btn-dark); color: #fff; }
+        .btn-wa { background: #25d366; color: #fff; }
+
+        /* SERVICES */
+        .section-title { text-align: center; font-weight: 900; margin: 40px 0 20px; font-size: 26px; text-transform: uppercase; }
+        .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 0 15px; }
+        .service-card { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #eee; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .service-card img { width: 100%; height: 120px; object-fit: cover; }
+        .service-card h3 { padding: 10px; font-size: 14px; font-weight: 800; text-align: center; color: var(--btn-dark); }
+
+        /* BOOKING SECTION */
+        .booking-section { background: var(--accent-light); padding: 40px 20px; margin-top: 40px; }
+        .booking-card { background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #d4edda; }
+        .booking-form input, .booking-form select, .booking-form textarea {
+            width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;
+        }
+        .btn-book { background: var(--primary-green); color: #fff; border: none; width: 100%; font-size: 18px; cursor: pointer; padding: 14px; font-weight: 800; border-radius: 8px; }
+
+        /* REVIEWS */
+        .reviews-scroll { display: flex; overflow-x: auto; gap: 15px; padding: 20px 15px; scrollbar-width: none; }
+        .review-card { min-width: 280px; background: #fff; padding: 20px; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .stars { color: #f6ad55; margin-bottom: 10px; font-size: 18px; }
+        .review-text { font-style: italic; font-size: 14px; color: #4a5568; margin-bottom: 10px; }
+        .reviewer-name { font-weight: 800; font-size: 15px; color: var(--btn-dark); }
+
+        /* WHAT WE TAKE */
+        .what-we-take { background: #fff; margin: 30px 15px; padding: 20px; border-radius: 15px; border: 1px solid #eee; }
+        .take-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .take-item { background: #f8f9fa; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+
+        /* FOOTER */
+        footer { text-align: center; padding: 40px 20px 120px; background: #fff; border-top: 1px solid #eee; }
+        footer h2 { color: var(--primary-green); font-weight: 900; margin-bottom: 5px; }
+        footer p { color: #718096; font-size: 14px; }
+
+        /* STICKY BOTTOM BAR */
+        .sticky-bar {
+            position: fixed; bottom: 0; left: 0; width: 100%; display: grid; grid-template-columns: 1fr 1fr; z-index: 2000; box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+        }
+        .sticky-bar a { padding: 18px; text-align: center; color: #fff; text-decoration: none; font-weight: 900; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .s-call { background: var(--btn-dark); }
+        .s-wa { background: #25d366; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-icon">♻</span> JUNK AWAY UAE
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="badge-row">
+            <div class="badge">TRUSTED SINCE 2008</div>
+            <div class="badge">FREE ESTIMATES</div>
+        </div>
+        <h1><span>SAME-DAY</span><br>Junk Removal Dubai</h1>
+        
+        <div class="check-item"><span class="check-icon">✓</span> Scrap Metal & Iron Pickup</div>
+        <div class="check-item"><span class="check-icon">✓</span> Construction Waste Hauling</div>
+        <div class="check-item"><span class="check-icon">✓</span> Furniture & Villa Cleanouts</div>
+        <div class="check-item"><span class="check-icon">✓</span> 100% Licensed & Dubai Municipality Approved</div>
+
+        <div class="hero-btns">
+            <a href="tel:0529267678" class="btn btn-call">📞 CALL NOW</a>
+            <a href="https://wa.me/971529267678?text=Hi%20JunkAway%2C%20I%20need%20a%20junk%20removal%20quote." class="btn btn-wa">WHATSAPP</a>
+        </div>
+    </section>
+
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=400" alt="Scrap">
+            <h3>Scrap Metal Pickup</h3>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1591193520257-c030ea857817?q=80&w=400" alt="Construction">
+            <h3>Construction Waste</h3>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?q=80&w=400" alt="Trash">
+            <h3>General Trash</h3>
+        </div>
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=400" alt="Furniture">
+            <h3>Furniture Removal</h3>
+        </div>
+    </div>
+
+    <section class="booking-section">
+        <h2 class="section-title" style="margin-top:0">Book Free Inspection</h2>
+        <div class="booking-card">
+            <form class="booking-form" action="https://wa.me/971529267678" method="GET">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option value="Scrap">Scrap Metal</option>
+                    <option value="Construction">Construction Waste</option>
+                    <option value="Furniture">Furniture Removal</option>
+                    <option value="Villa">Villa Cleanout</option>
+                    <option value="Other">Other Trash</option>
+                </select>
+                <textarea rows="3" placeholder="Description of Junk (Items, Location, etc.)"></textarea>
+                <button type="submit" class="btn btn-book">GET MY QUOTE NOW</button>
+            </form>
+        </div>
+    </section>
+
+    <h2 class="section-title">What We Remove</h2>
+    <div class="what-we-take">
+        <div class="take-grid">
+            <div class="take-item">🏗️ Construction Debris</div>
+            <div class="take-item">🔩 Scrap Metal</div>
+            <div class="take-item">🗑️ General Trash</div>
+            <div class="take-item">🛋️ Sofas & Beds</div>
+            <div class="take-item">📺 Appliances</div>
+            <div class="take-item">📦 Office Waste</div>
+            <div class="take-item">🧺 E-Waste</div>
+            <div class="take-item">🌳 Garden Waste</div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Customer Reviews</h2>
+    <div class="reviews-scroll">
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Amazing same-day service. They cleared my construction waste from my villa in JVC in just 2 hours. Very clean!"</p>
+            <p class="reviewer-name">- Ahmed K. (JVC)</p>
+        </div>
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Best scrap metal collectors in Dubai. They were very professional and dismantled my heavy furniture for free."</p>
+            <p class="reviewer-name">- Sarah M. (Marina)</p>
+        </div>
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Prompt and professional. Used them for my office shift in Business Bay. Highly recommended!"</p>
+            <p class="reviewer-name">- David L. (Business Bay)</p>
+        </div>
+    </div>
+
+    <footer>
+        <h2>JUNK AWAY UAE</h2>
+        <p>© 2026 Junk Away UAE - Dubai's No.1 Removal Service</p>
+        <p>Expert Scrap, Construction & Furniture Disposal</p>
+    </footer>
+
+    <div class="sticky-bar">
+        <a href="tel:0529267678" class="s-call">📞 CALL NOW</a>
+        <a href="https://wa.me/971529267678" class="s-wa">WHATSAPP</a>
+    </div>
+
+</body>
+</html>
